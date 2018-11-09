@@ -1,0 +1,103 @@
+
+/* Matches */
+/* li:matches(:nth-child(even), .target){
+  background-color: blue;
+} */
+
+/* li:not(.targer){
+  background-color: blue;
+} */
+
+/* :root {
+  --awesomeColor: #2980b9;
+}
+
+li:first-child {
+  color: var(--awesomeColor);
+}
+
+@custom-selector :--headers h1, h2, h3, h4, h5, h6;
+
+:--headers {
+  color: #8e44ad;
+} */
+
+/* @custom-media --ipad-size (450px <= width < 850px);
+
+@media(--ipad-szie){
+  body {
+    color: red;
+  }
+} */
+
+/* h1 {
+  font-family: system-ui
+} */
+
+main {
+  background-color: blue;
+  & section {
+    background-color: red;
+    width: 500px;
+    & li {
+      background-color: yellow;
+      width: 400px;
+      & a {
+        color: black;
+        &:hover {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
+
+a{
+  /* selecter가 더 강력해서 안 먹힙니다. */
+  color: red;
+}
+
+
+
+
+
+
+/* @custom-media --viewport-medium (width <= 50rem);
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+:root {
+  --fontSize: 1rem;
+  --mainColor: #12345678;
+  --secondaryColor: lab(32.5 38.5 -47.6 / 90%);
+}
+
+html {
+  overflow: hidden auto;
+}
+
+@media (--viewport-medium) {
+  body {
+    color: var(--mainColor);
+    font-family: system-ui;
+    font-size: var(--fontSize);
+    line-height: calc(var(--fontSize) * 1.5);
+    overflow-wrap: break-word;
+    padding-inline: calc(var(--fontSize) / 2 + 1px);
+  }
+}
+
+:--heading {
+  margin-block: 0;
+}
+
+.hero:matches(main, .main) {
+  background-image: image-set("img/background.jpg" 1x, "img/background-2x.jpg" 2x);
+}
+
+a {
+  color: rgb(0 0 100% / 90%);
+
+  &:hover {
+    color: rebeccapurple;
+  }
+} */

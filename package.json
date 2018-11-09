@@ -1,0 +1,29 @@
+{
+  "name": "css-masterclass",
+  "version": "1.0.0",
+  "description": "## Flexbox",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuni-Q/css-masterclass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yuni-Q/css-masterclass/issues"
+  },
+  "homepage": "https://github.com/Yuni-Q/css-masterclass#readme",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+    "postcss-preset-env": "^6.4.0"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {
+        "stage": 0
+      }
+    }
+  }
+}
